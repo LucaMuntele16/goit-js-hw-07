@@ -32,3 +32,8 @@ function selectImage(event) {
 `);
   instance.show();
 }
+document.addEventListener('keyup', event => {
+  if(event.code === 'Escape'){
+    instance.close();
+  }
+});
